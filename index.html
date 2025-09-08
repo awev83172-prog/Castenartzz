@@ -23,9 +23,15 @@
  <div class="menu-toggle">&#9776;</div>
   </nav>
 
+  <!-- CEO Logo Section -->
+<section class="ceo-logo">
+  <img src="castenimg.png" alt="Casten Artzz CEO">
+</section>
 
 
-  <!-- Hero Section --> <section class="hero"> <div class="hero-container"> <!-- Left: Text --> <div class="hero-text"> <h1> I’m <span class="neon">Casten Artzz</span></h1> <h2>YouTuber | Web3 Creator</h2> <p> Greetings, fellow crypto explorers! I am Casten Artzz, a passionate and innovative blockchain educationist dedicated to helping individuals, onboard themselves and put them through in crypto and decentralized systems. </p> <div class="hero-buttons"> <a href="contact.html" class="btn-outline">Work With Me</a> <a href="projects.html" class="btn-outline">View Projects</a> </div> </div> <!-- Right: Image --> <div class="hero-image"> <img src="castenimg.png" alt="Castenartzz"> </div> </div> </section>
+
+
+  <!-- Hero Section --> <section class="hero"> <div class="hero-container"> <!-- Left: Text --> <div class="hero-text"> <h1> I’m <span class="neon">Casten Artzz</span></h1> <h2>YouTuber | Web3 Creator</h2> <p> Greetings, fellow crypto explorers! I am Casten Artzz, a passionate and innovative blockchain educationist dedicated to helping individuals, onboard themselves and put them through in crypto and decentralized systems. </p> <div class="hero-buttons"> <a href="contact.html" class="btn-outline">Work With Me</a> <a href="projects.html" class="btn-outline">View Projects</a> </div> </div>  </section>
 
 
 
