@@ -205,6 +205,7 @@ a:hover {
   object-fit: cover;
   border: 3px thin #fff; /* white border for contrast */
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+   animation: float 5s ease-in-out infinite;
 }
 
 
@@ -1059,5 +1060,6 @@ body, html {
     height: auto;
   }
 }
+
 
 
