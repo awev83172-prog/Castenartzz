@@ -403,13 +403,15 @@ footer {
 
 
 /* ===== About Hero ===== */
-.about-hero {
-  background: linear-gradient(135deg, #0e0d0d 60%, #1a1a1a 80%);
-  padding: 4rem 8%;
+.about-hero  {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 6rem 4% 4rem; /* more space like Binance Academy */
+  background: #0c0c0c;
+  text-align: center;
 }
+
 
 .about-container {
   display: flex;
@@ -1057,4 +1059,5 @@ body, html {
     height: auto;
   }
 }
+
 
