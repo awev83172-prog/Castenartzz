@@ -200,18 +200,11 @@ a:hover {
 
 .ceo-logo img {
   width: 230px;
-  height: 150px;
+  height: 200px;
   border-radius: 30%;   /* makes it circular */
   object-fit: cover;
-  border: 3px solid #fff; /* white border for contrast */
+  border: 3px thin #fff; /* white border for contrast */
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-}
-
-.ceo-name {
-  margin-top: 1rem;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #f1f1f1;
 }
 
 
@@ -1064,3 +1057,4 @@ body, html {
     height: auto;
   }
 }
+
