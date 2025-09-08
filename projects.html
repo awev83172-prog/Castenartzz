@@ -21,11 +21,7 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <div class="menu-toggle">&#9776;</div>
-</nav>
-
- <!-- Hamburger -->
-  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-</nav>
+  </nav>
 
   <!-- THIS WEEK -->
   <section id="this-week" class="section section-spaced">
@@ -359,6 +355,15 @@ Maple is scaling onchain finance.
         alert('Thanks! (This is a demo subscribe handler — connect to your backend.)');
       });
     });
+
+    
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
   </script>
 
 </body>
