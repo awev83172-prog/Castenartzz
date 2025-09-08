@@ -8,7 +8,7 @@
 
 body {
   background: #0c0c0c;
-  color: #fcf9f9;
+  color: #f5f5f5;
   line-height: 1.7;
   overflow-x: hidden;
 }
@@ -16,12 +16,12 @@ body {
 /* Headings */
 h1, h2, h3 {
   font-weight: 700;
-  margin-bottom: 0rem;
-  color: #f1f1f1;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
 }
 
 p {
-  color: #444;
+  color: #cccccc; /* brighter text for readability */
 }
 
 a {
@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: #000;
+  color: #fdfdfb; /* Binance yellow */
 }
 
 /* ===== Navbar ===== */
@@ -39,30 +39,30 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.2rem 4%;
-  background: transparent;
+  height: 64px; /* Binance Academy height */
+  padding: 0 5%;
+  background: #121212;
   position: sticky;
-  top: 50;
+  top: 0; /* fixed to top */
   z-index: 1000;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.6);
 }
 
 .logo {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #fff;
+  color: #fffffe; /* Binance yellow */
   letter-spacing: 1px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .nav-links li a {
-  color: #fff;
+  color: #ffffff;
   font-weight: 500;
   position: relative;
 }
@@ -72,7 +72,7 @@ a:hover {
   display: block;
   height: 2px;
   width: 0;
-  background: #fff;
+  background: #f7f6f5;
   transition: width 0.3s ease;
   position: absolute;
   bottom: -4px;
@@ -84,7 +84,7 @@ a:hover {
   width: 100%;
 }
 
-/* ========== MENU TOGGLE FOR MOBILE ========== */
+/* ===== MENU TOGGLE FOR MOBILE ===== */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -97,12 +97,12 @@ a:hover {
     display: none;
     flex-direction: column;
     gap: 1rem;
-    background: #101028;
+    background: #1a1a1a;
     position: absolute;
-    top: 60px;
+    top: 64px;
     right: 5%;
     padding: 1rem;
-    border-radius: 12px;
+    border-radius: 8px;
   }
 
   .nav-links.show {
@@ -114,92 +114,84 @@ a:hover {
   }
 }
 
+/* ===== Hero Section ===== */
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 4% 2rem; /* less top padding */
-  margin-top: 0px; /* force hero closer to navbar */
-  background: linear-gradient(135deg, #0e0d0d 60%, #222222 80%);
-  position: relative;
-  overflow: hidden;
+  padding: 6rem 4% 4rem; /* more space like Binance Academy */
+  background: #0c0c0c;
+  text-align: center;
 }
 
 .hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .hero-text {
-  flex: 1;
-  max-width: 550px;
   animation: fadeUp 1s ease-in-out forwards;
 }
 
 .hero-text h1 {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .hero-text .neon {
-  color: #fdf9f9;
-  border-bottom: 3px solid #faf6f6;
+  color: #ffffff;
+  border-bottom: 3px solid #fcfcfb;
 }
 
 .hero-text h2 {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #fffefe;
+  color: #e0e0e0;
   margin-bottom: 1.5rem;
 }
 
 .hero-text p {
   margin-bottom: 2rem;
-  font-size: 1.05rem;
-  color: #fff9f9;
+  font-size: 1.1rem;
+  color: #cccccc;
 }
 
 .hero-buttons {
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
 .btn-outline {
   padding: 0.8rem 1.5rem;
-  border: 2px solid #fcfbfb;
-  color: #fffcfc;
+  border: 2px solid #f8f8f6;
+  color: #ffffff;
   font-weight: 600;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .btn-outline:hover {
-  background: #f8f7f7;
+  background: #fcfcfc;
   color: #111111;
   transform: translateY(-3px);
 }
 
-
+/* ===== Responsive ===== */
 @media(max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #101028;
-    position: absolute;
-    top: 70px;
-    right: 5%;
-    padding: 1rem;
-    border-radius: 8px;
+  .hero {
+    padding: 5rem 2rem 3rem;
   }
-  .nav-links.show {
-    display: flex;
+
+  .hero-text h1 {
+    font-size: 2.2rem;
   }
-  .menu-toggle {
-    display: block;
+
+  .hero-text p {
+    font-size: 1rem;
   }
 }
+
 
 /* Hero Image - Floating Cutout Effect */
 .hero-image img {
@@ -661,7 +653,7 @@ body {
 /* ===== SECTIONS ===== */
 .section {
   padding: 4rem 5%;
-  margin-top: -75px; /* force hero closer to navbar */
+  margin-top: -100px; /* force hero closer to navbar */
   color: #f8f8f8;
 }
 .section-title {
@@ -1014,6 +1006,7 @@ footer {
 }
 
 
+
 /* General fix for mobile content */
 body, html {
   margin: 0;
@@ -1057,9 +1050,3 @@ body, html {
     height: auto;
   }
 }
-
-
-
-
-
-
