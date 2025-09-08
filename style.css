@@ -119,7 +119,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 0.5rem 4% 2rem; /* less top padding */
-  margin-top: -170px; /* force hero closer to navbar */
+  margin-top: -130px; /* force hero closer to navbar */
   background: linear-gradient(135deg, #0e0d0d 60%, #222222 80%);
   position: relative;
   overflow: hidden;
@@ -963,5 +963,6 @@ footer {
     font-size: 2.2rem;
   }
 }
+
 
 
