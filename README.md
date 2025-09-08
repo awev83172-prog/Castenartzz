@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,12 +19,9 @@
     <li><a href="projects.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <div class="menu-toggle">&#9776;</div>
-</nav>
 
- <!-- Hamburger -->
-  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-</nav>
+ <div class="menu-toggle">&#9776;</div>
+  </nav>
 
 
 
@@ -136,4 +132,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
