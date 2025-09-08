@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Castenartzz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="logo.png" alt="Castenartzz Logo" style="height:95px; vertical-align:middle; margin-right:8px;">
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html"class="active">Contact</a></li>
+  </ul>
+  <div class="menu-toggle">&#9776;</div>
+</nav>
+
+ <!-- Hamburger -->
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="hero-content">
+      <h1>Let’s <span class="neon">Connect</span></h1>
+      <p>Together, we can shape the future of blockchain and decentralized applications.  
+      Reach out through any platform you prefer!</p>
+    </div>
+  </section>
+<!-- Contact Options -->
+<section class="contact-options">
+  <h2 class="section-title">Find Me On</h2>
+  <div class="contact-grid">
+    <a href="https://www.linkedin.com/in/casten-artzz-6319a1254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="contact-card">
+      <i class="fa-brands fa-linkedin"></i>
+      <h3>LinkedIn</h3>
+      <p>Professional Profile</p>
+    </a>
+
+    <a href="https://t.me/messijnrz" target="_blank" class="contact-card">
+      <i class="fa-brands fa-telegram"></i>
+      <h3>Telegram</h3>
+      <p>@messijnrz</p>
+    </a>
+
+    <a href="https://x.com/castanoartzz?s=21" target="_blank" class="contact-card">
+      <i class="fa-brands fa-x-twitter"></i>
+      <h3>X (Twitter)</h3>
+      <p>@castanoartzz</p>
+    </a>
+
+    <a href="https://wa.me/2348145099520" target="_blank" class="contact-card">
+      <i class="fa-brands fa-whatsapp"></i>
+      <h3>WhatsApp</h3>
+      <p>+234 814 509 9520</p>
+    </a>
+
+    <a href="https://youtube.com/@castenoartz3256?si=CaQVUFKoTH052pzN" target="_blank" class="contact-card">
+      <i class="fa-brands fa-youtube"></i>
+      <h3>YouTube</h3>
+      <p>Crypto Talks & Projects</p>
+    </a>
+  </div>
+</section>
+
+
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <h2 class="section-title">Send a Message</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Let’s Build the Future of Crypto Together</h2>
+    <p>Have a project idea or collaboration in mind?  
+    I’m always open to new challenges and partnerships.</p>
+    <a href="mailto:support@castenartzz.com" class="btn">Get In Touch</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Castenartzz | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
