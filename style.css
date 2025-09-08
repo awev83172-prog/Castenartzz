@@ -1012,3 +1012,50 @@ footer {
   margin-left: auto;
 }
 
+
+/* General fix for mobile content */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* prevent side scrolling */
+}
+
+.about-container,
+.experience,
+.past-works,
+.philosophy,
+.achievements,
+.vision,
+.cta {
+  width: 100%;
+  max-width: 1200px; /* keeps it nice on big screens */
+  margin: 0 auto; /* centers content */
+  padding: 20px; /* breathing space */
+}
+
+/* Text alignment fix for mobile */
+@media (max-width: 768px) {
+  .about-text,
+  .experience,
+  .past-works,
+  .philosophy,
+  .achievements,
+  .vision,
+  .cta {
+    text-align: center; /* center text on small screens */
+  }
+
+  .about-container {
+    flex-direction: column; /* stack image and text */
+    align-items: center;
+  }
+
+  .about-image img {
+    max-width: 90%; /* scale image nicely */
+    height: auto;
+  }
+}
+
+
+
