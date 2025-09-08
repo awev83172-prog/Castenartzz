@@ -653,7 +653,7 @@ body {
 /* ===== SECTIONS ===== */
 .section {
   padding: 4rem 5%;
-  margin-top: -75px; /* force hero closer to navbar */
+  margin-top: -60px; /* force hero closer to navbar */
   color: #f8f8f8;
 }
 .section-title {
@@ -1050,4 +1050,5 @@ body, html {
     height: auto;
   }
 }
+
 
