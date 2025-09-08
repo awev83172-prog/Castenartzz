@@ -83,43 +83,42 @@ a:hover {
 .nav-links li a.active::after {
   width: 100%;
 }
-
+/* ========== MENU TOGGLE FOR MOBILE ========== */
 .menu-toggle {
   display: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   cursor: pointer;
   color: #fff;
 }
 
-/* ===== MOBILE VIEW ===== */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    top: 70px;
-    right: -100%;
-    width: 200px;
-    height: auto;
-    background: #111;
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 1rem;
+    background: #101028;
+    position: absolute;
+    top: 60px;
+    right: 5%;
     padding: 1rem;
-    transition: right 0.3s ease;
+    border-radius: 12px;
   }
-  .nav-links.active {
-    right: 0;
+
+  .nav-links.show {
+    display: flex;
   }
+
   .menu-toggle {
     display: block;
   }
 }
-
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.5rem 4% 2rem; /* less top padding */
-  margin-top: -130px; /* force hero closer to navbar */
+  margin-top: 0px; /* force hero closer to navbar */
   background: linear-gradient(135deg, #0e0d0d 60%, #222222 80%);
   position: relative;
   overflow: hidden;
@@ -179,6 +178,26 @@ a:hover {
   background: #f8f7f7;
   color: #111111;
   transform: translateY(-3px);
+}
+
+
+@media(max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #101028;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
 }
 
 /* Hero Image - Floating Cutout Effect */
@@ -963,6 +982,33 @@ footer {
     font-size: 2.2rem;
   }
 }
+ 
 
+/* ===== NAVBAR FIX ===== */
+.nav-links {
+  position: absolute;
+  top: 70px;
+  right: -100%;     /* hidden by default */
+  width: 220px;
+  background: #111;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  transition: right 0.3s ease;
+  list-style: none;
+  z-index: 999;
+}
 
+/* When hamburger is clicked */
+.nav-links.active {
+  right: 0;
+}
+
+.menu-toggle {
+  display: block;   /* always visible */
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+  margin-left: auto;
+}
 
