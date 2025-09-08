@@ -192,21 +192,29 @@ a:hover {
   }
 }
 
-
-.hero-image {
-  display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center;     /* centers vertically */
-  width: 100%;
+/* CEO Logo Section */
+.ceo-logo {
+  text-align: center;
+  margin: 2rem auto 1rem;
 }
 
-.hero-image img {
-  width: 720px;
-  max-width: 170%;
-  object-fit: contain;
-  filter: drop-shadow(0px 8px 25px rgba(0,0,0,0.25));
-  animation: float 4s ease-in-out infinite;
+.ceo-logo img {
+  width: 230px;
+  height: 150px;
+  border-radius: 30%;   /* makes it circular */
+  object-fit: cover;
+  border: 3px solid #fff; /* white border for contrast */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
+
+.ceo-name {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f1f1f1;
+}
+
+
 
 /* Floating animation */
 @keyframes float {
@@ -659,7 +667,7 @@ body {
 /* ===== SECTIONS ===== */
 .section {
   padding: 4rem 5%;
-  margin-top: -60px; /* force hero closer to navbar */
+  margin-top: -100px; /* force hero closer to navbar */
   color: #f8f8f8;
 }
 .section-title {
@@ -1056,8 +1064,3 @@ body, html {
     height: auto;
   }
 }
-
-
-
-
-
