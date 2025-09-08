@@ -193,7 +193,13 @@ a:hover {
 }
 
 
-/* Hero Image - Floating Cutout Effect */
+.hero-image {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  width: 100%;
+}
+
 .hero-image img {
   width: 600px;
   max-width: 100%;
@@ -1050,5 +1056,6 @@ body, html {
     height: auto;
   }
 }
+
 
 
