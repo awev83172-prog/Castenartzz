@@ -315,24 +315,45 @@ Maple is scaling onchain finance.
         </div>
       </div>
 
-    <!-- FOOTER CTA & SMALL PRINT -->
-    <section style="margin-bottom:2rem">
-      <div class="card" style="text-align:center">
-        <h3>Stay Updated</h3>
-        <p class="meta">Subscribe for weekly updates on projects, security alerts, and new tooling.</p>
-                   <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank"  style="display:flex;gap:.6rem;justify-content:center;margin-top:.6rem;flex-wrap:wrap">
-          <input type="email" name="EMAIL" placeholder="Your email address" required                                                       style="padding:.6rem 1rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff" required>
-         <button type="submit" class="btn">Subscribe</button>
-</form>
-      </div>
-    </section>
 
-    <footer style="padding:1.2rem 0;text-align:center;color:#95b9c7">
-      <div class="meta">© 2025 Castenartzz • Projects page • All rights reserved</div>
-      <div style="margin-top:.4rem;font-size:.85rem;color:#6f8b95">
-        <span>Privacy</span> • <span>Terms</span> • <span>Code of Conduct</span>
+ <!-- FOOTER CTA & SMALL PRINT -->
+<section style="margin-bottom:2rem">
+  <div class="card" style="text-align:center">
+    <h3>Stay Updated</h3>
+    <p class="meta">Subscribe for weekly updates on projects, security alerts, and new tooling.</p>
+
+    <!-- ✅ Mailchimp Connected Form -->
+    <form 
+      action="https://gmail.us15.list-manage.com/subscribe/post?u=6babb83c12521a28b252330fb&amp;id=1fbe3132e4&amp;f_id=00f4bae0f0" 
+      method="post" 
+      target="_blank" 
+      novalidate
+      style="display:flex;gap:.6rem;justify-content:center;margin-top:.6rem;flex-wrap:wrap"
+    >
+      <input 
+        type="email" 
+        name="EMAIL" 
+        placeholder="Your email address" 
+        required
+        style="padding:.6rem 1rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff"
+      >
+      <button type="submit" class="btn">Subscribe</button>
+
+      <!-- Hidden anti-bot field (required by Mailchimp) -->
+      <div style="position:absolute;left:-5000px" aria-hidden="true">
+        <input type="text" name="b_6babb83c12521a28b252330fb_1fbe3132e4" tabindex="-1" value="">
       </div>
-    </footer>
+    </form>
+  </div>
+
+  <footer style="padding:1.2rem 0;text-align:center;color:#95b9c7">
+    <div class="meta">© 2025 Castenartzz • Projects page • All rights reserved</div>
+    <div style="margin-top:.4rem;font-size:.85rem;color:#6f8b95">
+      <span>Privacy</span> • <span>Terms</span> • <span>Code of Conduct</span>
+    </div>
+  </footer>
+</section>
+
 
   </main>
 
@@ -348,13 +369,25 @@ Maple is scaling onchain finance.
       });
     });
 
-    // Placeholder: handle subscribe form (demo)
-    document.querySelectorAll('form').forEach(f=>{
-      f.addEventListener('submit', e=>{
-        e.preventDefault();
-        alert('Thanks! (This is a demo subscribe handler — connect to your backend.)');
-      });
+  // Smooth scrolling to video anchors if needed
+  document.querySelectorAll('a[href^="#video-demo"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if(el) el.scrollIntoView({behavior:'smooth', block:'center'});
     });
+  });
+
+  // Mobile nav toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+
 
     
   const menuToggle = document.querySelector('.menu-toggle');
