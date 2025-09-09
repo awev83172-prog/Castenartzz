@@ -25,7 +25,7 @@
 
   <!-- CEO Logo Section -->
 <section class="ceo-logo">
-  <img src="castenimg.png" alt="Casten Artzz CEO">
+  <img src="castsimg.png" alt="Casten Artzz CEO">
 </section>
 
 
