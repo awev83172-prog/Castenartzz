@@ -1064,3 +1064,47 @@ body, html {
 
 
 
+
+/* Fade-in + slight upward movement for all main sections */
+.section, .hero, .ceo-banner, .vision, .stats, .expertise, .partners, .testimonials-preview, .cta, .achievements, .experience, .past-works, .philosophy, .closing, .about-hero, .contact-hero {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Staggered effect (optional) */
+.section:nth-child(1) { animation-delay: 0.2s; }
+.section:nth-child(2) { animation-delay: 0.4s; }
+.section:nth-child(3) { animation-delay: 0.6s; }
+/* Add more if needed */
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes floatSmooth {
+  0% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-8px) rotate(-1deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+  75% { transform: translateY(-8px) rotate(-1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+
+.ceo-banner img,
+.about-image img {
+  animation: floatSmooth 6s ease-in-out infinite;
+}
+
+
+
+
