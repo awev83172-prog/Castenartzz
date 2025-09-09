@@ -120,23 +120,52 @@ a:hover {
   z-index: 0;      /* sit behind text */
 }
 
-/* Make sure content stays above background */
 .hero-container {
+  display: flex;
+  align-items: center;       /* vertically center content */
+  justify-content: space-between;
+  gap: 3rem;
   max-width: 1200px;
-  margin: auto;
-  position: relative;
-  z-index: 1;
+  margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  animation: floatSmooth 6s ease-in-out infinite;
+}
 
 .hero-text {
-  animation: fadeUp 1s ease-in-out forwards;
+  width: 50%;
 }
 
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;      /* stack image and text */
+    align-items: center;         /* center horizontally */
+    text-align: center;          /* center text */
+    gap: 2rem;
+  }
+
+  .hero-image img {
+    width: 70%;                  /* bigger on small screens */
+    max-width: 300px;
+    height: auto;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+}
+
 
 @media (max-width: 480px) {
   .hero-text h1 {
@@ -185,25 +214,47 @@ a:hover {
 }
 
 
-
 .ceo-banner {
-  width: 100%;            /* let the section fill the screen */
-  text-align: center;     /* centers inline elements */
+  width: 100%;
+  text-align: center;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 40px;   /* ✅ pushes the whole section down */
+  height: auto;
 }
 
 .ceo-banner img {
-  width: 60%;             /* image takes 60% of screen */
+  width: 60%;
   height: auto;
-  max-height: 400px;      
-  object-fit: contain;
+  max-height: 400px;
+  object-fit: contain;   /* instead of cover */
   display: block;
-  margin: 0 auto;         /* ✅ centers the block image */
-animation: float 5s ease-in-out infinite;
+  margin: 0px auto 0;
 }
 
 
+
+/* ✅ Desktop (large screens) */
+@media (min-width: 1024px) {
+  .ceo-banner img {
+    width: 35%;           /* smaller on big screens */
+    max-height: 300px;    /* reduce height */
+  }
+}
+
+/* ✅ Tablets */
+@media (max-width: 1023px) and (min-width: 600px) {
+  .ceo-banner img {
+    width: 50%;           /* balanced for tablets */
+  }
+}
+
+/* ✅ Mobile */
+@media (max-width: 599px) {
+  .ceo-banner img {
+    width: 70%;           /* slightly bigger for small phones */
+    max-height: 250px;
+  }
+}
 
 
 /* Floating animation */
@@ -1064,7 +1115,6 @@ body, html {
 
 
 
-
 /* Fade-in + slight upward movement for all main sections */
 .section, .hero, .ceo-banner, .vision, .stats, .expertise, .partners, .testimonials-preview, .cta, .achievements, .experience, .past-works, .philosophy, .closing, .about-hero, .contact-hero {
   opacity: 0;
@@ -1104,7 +1154,3 @@ body, html {
 .about-image img {
   animation: floatSmooth 6s ease-in-out infinite;
 }
-
-
-
-
