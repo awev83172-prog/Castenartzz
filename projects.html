@@ -345,6 +345,26 @@ Maple is scaling onchain finance.
       </div>
     </form>
   </div>
+<!-- Success Popup -->
+<div id="subscribe-popup" style="
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:#1e1e2f;
+  color:#fff;
+  padding:20px 30px;
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.4);
+  text-align:center;
+  font-family:sans-serif;
+  z-index:1000;
+">
+  🎉 Successfully Subscribed!
+  <br>
+  <small>Thank you for joining the newsletter.</small>
+</div>
 
   <footer style="padding:1.2rem 0;text-align:center;color:#95b9c7">
     <div class="meta">© 2025 Castenartzz • Projects page • All rights reserved</div>
@@ -399,5 +419,27 @@ Maple is scaling onchain finance.
 
   </script>
 
+
+      <script>
+  const form = document.querySelector('#mc-embedded-subscribe-form'); 
+  const popup = document.getElementById('subscribe-popup');
+
+  if(form){
+    form.addEventListener('submit', function(e){
+      // Delay showing popup to simulate success after Mailchimp submit
+      setTimeout(()=>{
+        popup.style.display = 'block';
+
+        // Hide after 4 seconds
+        setTimeout(()=>{
+          popup.style.display = 'none';
+        }, 4000);
+      }, 2000);
+    });
+  }
+</script>
+
+
 </body>
 </html>
+
