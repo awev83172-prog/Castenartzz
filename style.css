@@ -196,7 +196,7 @@ a:hover {
   width: 60%;             /* image takes 60% of screen */
   height: auto;
   max-height: 400px;      
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   margin: 0 auto;         /* ✅ centers the block image */
 animation: float 5s ease-in-out infinite;
@@ -1060,4 +1060,5 @@ body, html {
     height: auto;
   }
 }
+
 
