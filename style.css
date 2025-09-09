@@ -166,6 +166,10 @@ a:hover {
   }
 }
 
+.hero-text {
+  animation: fadeUp 1s ease-in-out forwards;
+}
+
 
 @media (max-width: 480px) {
   .hero-text h1 {
@@ -1154,3 +1158,4 @@ body, html {
 .about-image img {
   animation: floatSmooth 6s ease-in-out infinite;
 }
+
