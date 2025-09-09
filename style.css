@@ -190,6 +190,7 @@ a:hover {
   width: 100%;            /* let the section fill the screen */
   text-align: center;     /* centers inline elements */
   overflow: hidden;
+  margin-top: 40px;
 }
 
 .ceo-banner img {
@@ -1060,5 +1061,6 @@ body, html {
     height: auto;
   }
 }
+
 
 
