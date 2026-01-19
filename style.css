@@ -131,7 +131,7 @@ a:hover {
 }
 
 .hero-image img {
-  width: 100%;
+  width: 300%;
   max-width: 400px;
   height: auto;
   object-fit: contain;
@@ -227,7 +227,7 @@ a:hover {
 }
 
 .ceo-banner img {
-  width: 60%;
+  width: 100%;
   height: auto;
   max-height: 400px;
   object-fit: contain;   /* instead of cover */
@@ -1158,4 +1158,5 @@ body, html {
 .about-image img {
   animation: floatSmooth 6s ease-in-out infinite;
 }
+
 
