@@ -370,18 +370,19 @@
       text-align:right;
     }
 
-    .work-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:14px;
-    }
+.work-card-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
 
-    .work-card{
-      border:1px solid var(--line);
-      background:var(--panel);
-      overflow:hidden;
-      transition:.3s;
-    }
+.work-card-media img,
+.work-card-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
     .work-card:hover{
       transform:translateY(-5px);
