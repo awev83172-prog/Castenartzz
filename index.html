@@ -804,7 +804,7 @@ body{
         <h2 class="reveal">Blockchain educationist and content creator.</h2>
 
         <p class="reveal">
-          Greetings, fellow crypto explorers. I am Casten Artzz, a passionate and innovative blockchain educationist dedicated to helping individuals onboard themselves in crypto and decentralized systems.
+          Greetings, fellow crypto explorers.I’m Casten Artzz, a video content creator and UGC creator passionate about creating engaging content that helps brands connect with their audience.
         </p>
 
         <div class="hero-buttons reveal">
@@ -867,20 +867,20 @@ body{
 
         <article class="expertise-item reveal">
           <div class="expertise-number">01</div>
-          <h3>Blockchain Technology</h3>
-          <p>Deep understanding of how blockchain systems work and how to implement them effectively.</p>
+          <h3>Video Content Creation</h3>
+          <p>Creating engaging short form and long form videos for brands, products, and digital platforms.</p>
         </article>
 
         <article class="expertise-item reveal">
           <div class="expertise-number">02</div>
-          <h3>Decentralized Finance Educator</h3>
-          <p>Teaching what decentralized finance is, how it works, and why it matters in the future of money.</p>
+          <h3>UGC & Brand Content</h3>
+          <p>Creating authentic UGC style content, product videos, testimonials, and social content that connects with audiences.</p>
         </article>
 
         <article class="expertise-item reveal">
           <div class="expertise-number">03</div>
-          <h3>Content Creator</h3>
-          <p>Creating engaging, valuable, and creative material across different platforms to inform, entertain, or inspire an audience.</p>
+          <h3>Video Editing & Creative Strategy</h3>
+          <p>Bringing ideas to life through advanced editing, storytelling and creative direction.</p>
         </article>
 
       </div>
