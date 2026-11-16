@@ -3,113 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Castenartzz</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="contact.css">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="Get in touch with Casten Artzz for UGC videos, product videos, short-form content and creative collaborations.">
+  <title>Contact | Casten Artzz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root{--bg:#090a0c;--surface:#111316;--surface-2:#17191d;--gold:#d9a653;--gold-light:#e7bd78;--white:#f4f4f2;--muted:#a1a5ad;--muted-2:#747a84;--line:rgba(255,255,255,.12);--max:1200px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--bg);color:var(--white);font-family:"DM Sans",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}
+    .container{width:min(var(--max),calc(100% - 64px));margin:auto}
+    .eyebrow{color:var(--gold);font-size:.76rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase;margin:0 0 16px}
+    h1,h2,h3,p{margin-top:0}
+    .site-header{position:fixed;inset:0 0 auto;z-index:50;background:rgba(9,10,12,.9);border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}
+    .nav-wrap{min-height:78px;display:flex;align-items:center;gap:28px}
+    .brand{display:flex;align-items:center;gap:10px;margin-right:auto;height:45px}
+    .brand img{width:48px;height:42px;object-fit:contain}
+    .brand-name{display:flex;gap:5px;font:800 16px/1 "Manrope",sans-serif;letter-spacing:.03em;white-space:nowrap}
+    .casten{color:white}.artzz{color:var(--gold-light)}
+    .nav-links{display:flex;align-items:center;gap:34px;color:var(--muted);font-size:.9rem}
+    .nav-links a{transition:color .2s}.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+    .nav-cta{padding:11px 19px;border:1px solid rgba(217,166,83,.65);color:var(--gold-light);font-size:.86rem;font-weight:700;transition:.2s}
+    .nav-cta:hover{background:var(--gold);color:#17120a}
+    .menu-toggle{display:none;width:44px;height:44px;border:1px solid var(--line);background:transparent;color:white;font-size:1.35rem;cursor:pointer}
+
+    .contact-hero{position:relative;overflow:hidden;padding:175px 0 100px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 85% 35%,rgba(217,166,83,.10),transparent 30%),linear-gradient(120deg,#111316,#090a0c 70%)}
+    .contact-hero:after{content:"";position:absolute;width:430px;height:430px;right:-120px;top:100px;border:1px solid rgba(217,166,83,.18);border-radius:50%;box-shadow:0 0 0 55px rgba(217,166,83,.025),0 0 0 110px rgba(217,166,83,.018);pointer-events:none}
+    .hero-content{position:relative;z-index:1;max-width:760px}
+    .hero-content h1{font:800 clamp(3.3rem,8vw,6.5rem)/1.02 "Manrope",sans-serif;letter-spacing:-.075em;margin:0 0 22px}
+    .hero-content h1 span{color:var(--gold)}
+    .hero-content p:last-child{max-width:650px;color:var(--muted);font-size:1.08rem;line-height:1.9;margin:0}
+
+    .section{padding:100px 0}
+    .contact-options{background:var(--bg)}
+    .section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}
+    .section-heading h2,.form-heading h2{font:800 clamp(2rem,4vw,3.2rem)/1.1 "Manrope",sans-serif;letter-spacing:-.06em;margin:0}
+    .section-heading h2 span,.form-heading h2 span{color:var(--gold)}
+    .section-heading>p{max-width:390px;color:var(--muted);margin:0;font-size:.95rem}
+    .contact-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+    .contact-card{min-height:205px;padding:27px 22px;background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;align-items:flex-start;transition:transform .25s,border-color .25s,background .25s}
+    .contact-card:hover{transform:translateY(-6px);border-color:rgba(217,166,83,.65);background:var(--surface-2)}
+    .contact-card i{width:46px;height:46px;display:grid;place-items:center;border:1px solid rgba(217,166,83,.35);color:var(--gold);font-size:1.25rem;margin-bottom:23px}
+    .contact-card h3{font:700 1.05rem "Manrope",sans-serif;margin:0 0 5px}
+    .contact-card p{font-size:.82rem;color:var(--muted);margin:0;overflow-wrap:anywhere}
+    .card-arrow{color:var(--gold);margin-top:auto;padding-top:15px;font-size:.8rem}
+
+    .message-section{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .message-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start}
+    .form-heading h2{margin-bottom:18px}
+    .form-heading>p:not(.eyebrow){color:var(--muted);max-width:390px;line-height:1.85}
+    .form-note{display:flex;align-items:center;gap:12px;color:var(--muted-2);font-size:.82rem;margin-top:35px}
+    .form-note i{color:var(--gold)}
+    .contact-form{padding:34px;background:var(--bg);border:1px solid var(--line)}
+    .form-group{margin-bottom:18px}
+    .form-group label{display:block;color:var(--muted);font-size:.8rem;font-weight:600;margin-bottom:8px}
+    .form-group input,.form-group textarea{width:100%;background:var(--surface);border:1px solid var(--line);color:var(--white);padding:16px 17px;outline:none;transition:border-color .2s;resize:vertical}
+    .form-group input::placeholder,.form-group textarea::placeholder{color:var(--muted-2)}
+    .form-group input:focus,.form-group textarea:focus{border-color:var(--gold)}
+    .btn{min-height:54px;display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:0 25px;font-weight:700;border:0;cursor:pointer;transition:.22s}
+    .btn-primary{background:var(--gold);color:#17120a}.btn-primary:hover{background:var(--gold-light);transform:translateY(-3px)}
+    .btn-outline{border:1px solid var(--line);color:var(--white);background:transparent}.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+    .form-submit{width:100%}
+
+    .cta{padding:90px 0;text-align:center;background:linear-gradient(120deg,#15120d,#0d0f11 65%);border-bottom:1px solid var(--line)}
+    .cta-inner{max-width:760px;margin:auto}
+    .cta h2{font:800 clamp(2.2rem,5vw,4rem)/1.08 "Manrope",sans-serif;letter-spacing:-.065em;margin:12px 0 18px}
+    .cta h2 span{color:var(--gold)}
+    .cta p{max-width:620px;margin:0 auto 30px;color:var(--muted);font-size:1.02rem;line-height:1.85}
+    footer{padding:25px 0;color:var(--muted-2);font-size:.8rem}
+    .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .footer-inner span{color:var(--muted)}
+
+    @media(max-width:1000px){.contact-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.message-layout{gap:40px}}
+    @media(max-width:700px){.container{width:min(var(--max),calc(100% - 40px))}.nav-wrap{min-height:70px}.nav-cta{display:none}.menu-toggle{display:block}.nav-links{position:absolute;top:70px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px 20px 20px;background:rgba(9,10,12,.98);border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.nav-links a{padding:13px 0;border-bottom:1px solid var(--line)}.contact-hero{padding:145px 0 75px}.hero-content h1{font-size:clamp(3rem,14vw,5rem)}.section{padding:72px 0}.section-heading{display:block}.section-heading>p{margin-top:16px}.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.contact-card{min-height:185px;padding:21px 17px}.contact-card i{margin-bottom:18px}.message-layout{grid-template-columns:1fr;gap:30px}.contact-form{padding:23px}.cta{padding:70px 0}.footer-inner{align-items:flex-start;flex-direction:column;gap:8px}}
+    @media(max-width:380px){.contact-grid{grid-template-columns:1fr}.contact-card{min-height:160px}}
+  </style>
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="logo">
-    <img src="logo.png" alt="Castenartzz Logo" style="height:95px; vertical-align:middle; margin-right:8px;">
-  </div>
-  
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html"class="active">Contact</a></li>
-  </ul>
-  <div class="menu-toggle">&#9776;</div>
-</nav>
-
- 
-
-  <!-- Hero Section -->
-  <section class="contact-hero">
-    <div class="hero-content">
-      <h1>Let’s <span class="neon">Connect</span></h1>
-      <p>Together, we can shape the future of blockchain and decentralized applications.  
-      Reach out through any platform you prefer!</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="HOME.HTML" aria-label="Casten Artzz home">
+        <img src="logo.png" alt="Casten Artzz Logo">
+        <span class="brand-name"><span class="casten">CASTEN</span><span class="artzz">ARTZZ</span></span>
+      </a>
+      <nav class="nav-links" id="mainNav" aria-label="Main navigation">
+        <a href="HOME.HTML">Home</a>
+        <a href="HOME.HTML">About</a>
+        <a href="HOME.HTML">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#message">LET'S TALK ↗</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     </div>
-  </section>
-<!-- Contact Options -->
-<section class="contact-options">
-  <h2 class="section-title">Find Me On</h2>
-  <div class="contact-grid">
-    <a href="https://www.linkedin.com/in/casten-artzz-6319a1254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="contact-card">
-      <i class="fa-brands fa-linkedin"></i>
-      <h3>LinkedIn</h3>
-      <p>Professional Profile</p>
-    </a>
+  </header>
 
-    <a href="https://t.me/messijnrz" target="_blank" class="contact-card">
-      <i class="fa-brands fa-telegram"></i>
-      <h3>Telegram</h3>
-      <p>@messijnrz</p>
-    </a>
-
-    <a href="https://x.com/castanoartzz?s=21" target="_blank" class="contact-card">
-      <i class="fa-brands fa-x-twitter"></i>
-      <h3>X (Twitter)</h3>
-      <p>@castanoartzz</p>
-    </a>
-
-    <a href="https://www.tiktok.com/@castenthecryptoguy?_r=1&_t=ZS-93GZ3LrBNo2" target="_blank" class="contact-card">
-      <i class="fa-brands fa-tiktok"></i>
-      <h3>Tiktok</h3>
-      <p>Casten web3 video creator</p>
-    </a>
-
-    <a href="https://youtube.com/@castenoartz3256?si=CaQVUFKoTH052pzN" target="_blank" class="contact-card">
-      <i class="fa-brands fa-youtube"></i>
-      <h3>YouTube</h3>
-      <p>Crypto Talks & Projects</p>
-    </a>
-  </div>
-</section>
-
-
-  <!-- Contact Form -->
-  <section class="contact-form">
-    <h2 class="section-title">Send a Message</h2>
-    <form action="#" method="POST">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Your Name" required>
+  <main>
+    <section class="contact-hero">
+      <div class="container hero-content">
+        <p class="eyebrow">THE NEXT STEP</p>
+        <h1>Let’s <span>Connect.</span></h1>
+        <p>I create natural, engaging video content that helps brands introduce products, tell stories and connect with their audiences. If you have an idea worth sharing, let’s bring it to life.</p>
       </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Your Email" required>
+    </section>
+
+    <section class="section contact-options">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">LET'S CONNECT</p><h2>Find Me <span>Online.</span></h2></div>
+          <p>Whether you’re a brand, business or creator, I’m open to conversations, creative projects and new opportunities.</p>
+        </div>
+        <div class="contact-grid">
+          <a href="https://www.linkedin.com/in/casten-artzz-6319a1254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <i class="fa-brands fa-linkedin"></i><h3>LinkedIn</h3><p>Creative &amp; Professional Profile</p><span class="card-arrow">Visit profile ↗</span>
+          </a>
+          <a href="https://t.me/messijnrz" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <i class="fa-brands fa-telegram"></i><h3>Telegram</h3><p>@messijnrz</p><span class="card-arrow">Message me ↗</span>
+          </a>
+          <a href="https://x.com/castanoartzz?s=21" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <i class="fa-brands fa-x-twitter"></i><h3>X (Twitter)</h3><p>@castanoartzz</p><span class="card-arrow">Follow me ↗</span>
+          </a>
+          <a href="https://wa.me/2348145099520" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <i class="fa-brands fa-whatsapp"></i><h3>WhatsApp</h3><p>+234 814 509 9520</p><span class="card-arrow">Chat on WhatsApp ↗</span>
+          </a>
+          <a href="https://youtube.com/@castenoartz3256?si=CaQVUFKoTH052pzN" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <i class="fa-brands fa-youtube"></i><h3>YouTube</h3><p>Creator Content &amp; Videos</p><span class="card-arrow">Watch videos ↗</span>
+          </a>
+        </div>
       </div>
-      <div class="form-group">
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    </section>
+
+    <section class="section message-section" id="message">
+      <div class="container message-layout">
+        <div class="form-heading">
+          <p class="eyebrow">HAVE SOMETHING IN MIND?</p>
+          <h2>Send a <span>Message.</span></h2>
+          <p>Have a product to introduce, a story to tell or a campaign to create? Share a few details and let’s discuss how we can work together.</p>
+          <div class="form-note"><i class="fa-regular fa-envelope"></i><span>Tell me what you’re working on and the kind of content you need.</span></div>
+        </div>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group"><label for="name">Your Name</label><input id="name" type="text" name="name" placeholder="Your Name" required></div>
+          <div class="form-group"><label for="email">Your Email</label><input id="email" type="email" name="email" placeholder="Your Email" required></div>
+          <div class="form-group"><label for="messageText">Your Message</label><textarea id="messageText" name="message" rows="5" placeholder="Tell me about your brand, product or video project..." required></textarea></div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message <span>↗</span></button>
+        </form>
       </div>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Let’s Build the Future of Crypto Together</h2>
-    <p>Have a project idea or collaboration in mind?  
-    I’m always open to new challenges and partnerships.</p>
-    <a href="mailto:support@castenartzz.com" class="btn">Get In Touch</a>
-  </section>
+    <section class="cta">
+      <div class="container cta-inner">
+        <p class="eyebrow">LET’S WORK TOGETHER</p>
+        <h2>Let’s Make Something <span>Worth Watching.</span></h2>
+        <p>From UGC and product videos to explainers and short form social content, I create videos that help brands communicate clearly and connect with people. Let’s talk about your next project.</p>
+        <a href="mailto:support@castenartzz.com" class="btn btn-primary">Work With Me <span>↗</span></a>
+      </div>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Castenartzz | All Rights Reserved</p>
-  </footer>
+  <footer><div class="container footer-inner"><div>© <span id="year"></span> Casten Artzz | All Rights Reserved</div><span>Made with intention.</span></div></footer>
 
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('mainNav');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+      menuToggle.textContent = isOpen ? '×' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation');
+      menuToggle.textContent = '☰';
+    }));
+  </script>
 </body>
 </html>
-
-
