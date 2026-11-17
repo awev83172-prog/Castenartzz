@@ -116,6 +116,119 @@ h1,h2,h3,h4,p{margin-top:0}
 .youtube-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .youtube-player .youtube-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:linear-gradient(145deg,#1c1e22,#101114);color:var(--muted);font-size:.75rem;text-align:center;padding:15px}
 
+
+/* YOUTUBE CREATOR PROFILE */
+.creator-channel-card {
+    display: grid;
+    grid-template-columns: 76px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+/* LOGO CONTAINER */
+.creator-channel-avatar {
+    width: 76px;
+    height: 76px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #17191d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.creator-channel-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+/* PROFILE INFORMATION */
+.creator-channel-copy {
+    min-width: 0;
+}
+
+.creator-channel-copy .eyebrow {
+    font-size: .65rem;
+    margin-bottom: 4px;
+}
+
+.creator-channel-copy h4 {
+    font-size: 1rem;
+    margin: 0 0 4px;
+}
+
+.creator-channel-copy p:not(.eyebrow) {
+    color: var(--muted);
+    font-size: .82rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* YOUTUBE CHANNEL BUTTON */
+.creator-channel-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 13px;
+    border: 1px solid rgba(217,166,83,.5);
+    color: var(--goldlight);
+    font-size: .75rem;
+    font-weight: 700;
+    white-space: nowrap;
+    border-radius: 5px;
+    transition: .25s;
+}
+
+.creator-channel-cta:hover {
+    background: var(--gold);
+    color: #17120a;
+}
+
+/* MOBILE PROFILE */
+@media(max-width:600px) {
+    .creator-channel-card {
+        grid-template-columns: 58px minmax(0, 1fr);
+        gap: 11px;
+        padding: 13px;
+        margin-bottom: 22px;
+    }
+
+    .creator-channel-avatar {
+        width: 58px;
+        height: 58px;
+        padding: 4px;
+        border-radius: 7px;
+    }
+
+    .creator-channel-copy h4 {
+        font-size: .9rem;
+    }
+
+    .creator-channel-copy p:not(.eyebrow) {
+        font-size: .75rem;
+    }
+
+    .creator-channel-cta {
+        grid-column: 2;
+        justify-self: start;
+        padding: 8px 11px;
+        font-size: .72rem;
+    }
+}
+
+
 .portfolio-switch{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 38px}
 .portfolio-switch-btn{padding:11px 17px;font:inherit;font-size:.84rem}
 #youtubePortfolioPanel[hidden],#ugcPortfolioPanel[hidden]{display:none!important}
