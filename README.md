@@ -394,7 +394,7 @@ footer{padding:25px 0;border-top:1px solid var(--line);color:var(--muted2);font-
 <article class="service-card"><span class="service-number">07</span><h3>Social Media Content</h3><p>Platform aware content shaped around how people discover and watch videos.</p><span class="service-arrow">↗</span></article>
 <article class="service-card"><span class="service-number">08</span><h3>Hosting &amp; AMAs</h3><p>Conversational hosting for online sessions, AMAs and community content.</p><span class="service-arrow">↗</span></article>
 </div></div></section>
-<section class="section contact-section" id="contact"><div class="container contact-inner reveal"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's make something <span>worth watching.</span></h2><p>Have a product to introduce, a story to tell or a campaign to bring to life? Let's talk.</p><div class="contact-actions"><a class="btn btn-primary" href="contact.html">Work With Me <span>↗</span></a><a class="btn btn-outline" href="#work">View Projects</a></div><div class="social-links"><a href="#" target="_blank" rel="noopener noreferrer">TikTok ↗</a><a href="https://www.youtube.com/channel/UCwpY7D3iYc_P6zUyoSkO6MQ" target="_blank" rel="noopener noreferrer">YouTube ↗</a><a href="#" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a></div></div></section>
+<section class="section contact-section" id="contact"><div class="container contact-inner reveal"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's make something <span>worth watching.</span></h2><p>Have a product to introduce, a story to tell or a campaign to bring to life? Let's talk.</p><div class="contact-actions"><a class="btn btn-primary" href="contact.html">Work With Me <span>↗</span></a><a class="btn btn-outline" href="#work">View Projects</a></div><div class="social-links"><a href="#" target="_blank" rel="noopener noreferrer">TikTok </a><a href="https://www.tiktok.com/@castenthecryptoguy?_r=1&_t=ZS-9BlEcL6QH9o" target="_blank" rel="noopener noreferrer">YouTube </a><a href="https://youtube.com/@castenartzz?si=EWobtM4_2i4EWHHp" target="_blank" rel="noopener noreferrer">X / Twitter </a></div></div></section>
 </main>
 <footer><div class="container footer-inner"><div>© <span id="year"></span> Casten Artzz. All rights reserved.</div><span>Made with intention.</span></div></footer>
 <script>
@@ -419,10 +419,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ["Keyframe Creator Commentary","Video with creators talking directly to the camera, sharing their thoughts and having interesting conversations, all made for social media.","keyframe-2.mp4","photo_2026-10-28_07-16-04.jpg","https://vt.tiktok.com/ZSgXHgnDo/"],
       ["Keyframe Creator Talk","A simple, natural video of the creator sharing thoughts and speaking directly to the audience.","keyframe-3.mp4","photo_2026-10-28_07-15-43.jpg","https://vt.tiktok.com/ZSgXHb3cD/"]
     ]},
-    {brand:"BlogsEo",name:"BlogsEo",tag:"BLOGSEO",videos:[
-      ["SEO & Blog Content","A simple look at how SEO tools and blog content can help improve a website’s visibility and reach more people online.","Blog Seo 1.mp4","","https://vt.tiktok.com/ZSsSx12BV/"],
-      ["AI-Powered SEO Workflow","A quick look at how Claude and BlogSEO can work together to connect a website and help bring in more organic traffic.","Blog Seo 2.mp4","","https://vt.tiktok.com/ZSsSxjBLs/"],
-      ["Blog SEO Integration Guide","A simple walkthrough showing how to connect BlogSEO to your website and use its tools to improve your site's SEO.","Blog Seo 3.mp4","","https://vt.tiktok.com/ZSsSxQB9J/"]
+    {brand:"BlogsEo",name:"BlogsEo",tag:"TIKTOK · BLOGSEO",videos:[
+      ["SEO & Blog Content","A simple look at how SEO tools and blog content can help improve a website’s visibility and reach more people online.","Blog Seo 1.mp4","https://vt.tiktok.com/ZSsSx12BV/",],
+      ["AI-Powered SEO Workflow","A quick look at how Claude and BlogSEO can work together to connect a website and help bring in more organic traffic.","Blog Seo 2.mp4","https://vt.tiktok.com/ZSsSxjBLs/"],
+      ["Blog SEO Integration Guide","A simple walkthrough showing how to connect BlogSEO to your website and use its tools to improve your site's SEO.","Blog Seo 3.mp4","https://vt.tiktok.com/ZSsSxQB9J/"]
     ]}
   ];
 
